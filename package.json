@@ -1,0 +1,41 @@
+{
+  "name": "playwright-saucedemo-framework",
+  "version": "2.0.0",
+  "description": "Enhanced Playwright automation framework with visual regression testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:safari": "npx playwright test --project=webkit",
+    "test:auth": "npx playwright test tests/auth/",
+    "test:cart": "npx playwright test tests/cart/",
+    "test:checkout": "npx playwright test tests/checkout/",
+    "test:product": "npx playwright test tests/product/",
+    "test:sorting": "npx playwright test tests/sorting/",
+    "test:visual": "npx playwright test tests/visual/",
+    "test:visual:update": "npx playwright test tests/visual/ --update-snapshots",
+    "report": "npx playwright show-report",
+    "clean": "if exist reports rmdir /s /q reports && if exist test-results rmdir /s /q test-results && if exist playwright-report rmdir /s /q playwright-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "saucedemo",
+    "e2e",
+    "typescript"
+  ],
+  "author": "Mike Ryan B. Cervantes",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "allure-commandline": "^2.25.0",
+    "allure-playwright": "^2.10.0",
+    "typescript": "^5.3.2"
+  }
+}

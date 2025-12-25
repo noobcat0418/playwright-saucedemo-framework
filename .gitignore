@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+build/
+
+# Reports (generated)
+reports/html-report/
+reports/json-report/
+reports/junit-report/
+reports/allure-results/
+reports/allure-report/
+reports/test-results/
+
+# Keep snapshots folder but ignore generated baseline images
+# Uncomment below if you want to track baselines in git:
+# !reports/snapshots/
+
+# Playwright
+playwright-report/
+playwright/.cache/
+test-results/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage
+coverage/
